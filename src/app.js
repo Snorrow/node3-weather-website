@@ -23,21 +23,21 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
    res.render('index', {
        title: 'Weather App',
-       name: 'Esa Denaux'
+       name: 'furrybunny'
    });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'Esa Denaux'
+        name: 'furrybunny'
     });
 });
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        name: 'Esa Denaux',
+        name: 'furrybunny',
         message: 'This is a sample message.'
     });
 });
@@ -60,7 +60,7 @@ app.get('/weather', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Esa Denaux',
+        name: 'furrybunny',
         message: 'Help article not found.'
     });
 });
@@ -69,7 +69,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'furrybunny',
         message: 'Page not found.'
     });
 });
